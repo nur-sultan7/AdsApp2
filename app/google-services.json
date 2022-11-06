@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "521002259091",
+    "project_id": "nurahmel",
+    "storage_bucket": "nurahmel.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:521002259091:android:8f59e38bf5ddee9a41b366",
+        "android_client_info": {
+          "package_name": "jindes.melbet.sto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "521002259091-4h9123hhmeh3gkg3f56c5ufnfioftcmj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAP_BYen2nhIV8fIDMHe-_Pbphd1x_esKk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "521002259091-4h9123hhmeh3gkg3f56c5ufnfioftcmj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
