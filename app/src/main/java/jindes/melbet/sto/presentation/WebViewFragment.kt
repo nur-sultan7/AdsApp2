@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import android.webkit.WebViewClient
 import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment
-import ersecboom.bet.kof.databinding.FragmentWebviewBinding
+import jindes.melbet.sto.databinding.FragmentWebviewBinding
 
 
 class WebViewFragment : Fragment() {

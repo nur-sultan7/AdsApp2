@@ -1,4 +1,4 @@
-package jindes.melbet.sto.domain
+package jindes.melbet.sto.domain.entities
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

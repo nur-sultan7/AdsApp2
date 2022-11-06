@@ -5,8 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import ersecboom.bet.kof.databinding.FragmentDetailsBinding
-import jindes.melbet.sto.domain.Exercise
+import jindes.melbet.sto.databinding.FragmentDetailsBinding
+import jindes.melbet.sto.domain.entities.Exercise
 
 
 class DetailFragment : Fragment() {

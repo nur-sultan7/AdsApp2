@@ -7,8 +7,8 @@ import android.telephony.TelephonyManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewbinding.BuildConfig
 import androidx.viewbinding.ViewBinding
-import ersecboom.bet.kof.R
-import ersecboom.bet.kof.databinding.ActivityMainBinding
+import jindes.melbet.sto.R
+import jindes.melbet.sto.databinding.ActivityMainBinding
 import java.util.*
 
 

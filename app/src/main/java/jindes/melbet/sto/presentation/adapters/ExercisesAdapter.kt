@@ -4,8 +4,8 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import ersecboom.bet.kof.databinding.ItemExerciseBinding
-import jindes.melbet.sto.domain.Exercise
+import jindes.melbet.sto.databinding.ItemExerciseBinding
+import jindes.melbet.sto.domain.entities.Exercise
 
 
 class ExercisesAdapter :

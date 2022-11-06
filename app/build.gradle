@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace 'ersecboom.bet.kof'
+    namespace 'jindes.melbet.sto'
     compileSdk 32
 
     defaultConfig {
-        applicationId "ersecboom.bet.kof"
+        applicationId "jindes.melbet.sto"
         minSdk 21
         targetSdk 32
         versionCode 1

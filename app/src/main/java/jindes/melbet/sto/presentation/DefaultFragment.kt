@@ -1,5 +1,6 @@
 package jindes.melbet.sto.presentation
 
+
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,11 +8,10 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import ersecboom.bet.kof.R
-import ersecboom.bet.kof.databinding.FragmentDefaultBinding
+import jindes.melbet.sto.R
 
-
-import jindes.melbet.sto.domain.Exercise
+import jindes.melbet.sto.databinding.FragmentDefaultBinding
+import jindes.melbet.sto.domain.entities.Exercise
 import jindes.melbet.sto.presentation.adapters.ExercisesAdapter
 
 

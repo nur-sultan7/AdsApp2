@@ -7,8 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import ersecboom.bet.kof.R
-import ersecboom.bet.kof.databinding.LoadingScreenBinding
+import jindes.melbet.sto.R
+import jindes.melbet.sto.databinding.LoadingScreenBinding
 
 
 class LoadingFragment : Fragment() {
