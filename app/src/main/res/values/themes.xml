@@ -18,4 +18,7 @@
     <style name="DarkStatusBar" parent="Theme.AdsTest">
         <item name="android:statusBarColor">@color/transparent_black</item>
     </style>
+    <style name="TvWorkoutDay">
+        <item name="android:textColor">@android:color/holo_blue_dark</item>
+    </style>
 </resources>

@@ -15,4 +15,7 @@
 
         <!-- Customize your theme here. -->
     </style>
+    <style name="TvWorkoutDay">
+        <item name="android:textColor">@color/white</item>
+    </style>
 </resources>

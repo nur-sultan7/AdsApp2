@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun launchDefaultFragment() {
         supportFragmentManager.beginTransaction()
-            .replace(R.id.main_container, DefaultFragment.newInstance()).commit()
+            .replace(R.id.main_container, WorkoutDaysFragment.newInstance()).commit()
     }
 
     private fun launchWebViewFragment(url: String) {

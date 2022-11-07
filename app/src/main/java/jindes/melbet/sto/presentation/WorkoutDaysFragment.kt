@@ -11,17 +11,17 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import jindes.melbet.sto.R
 
 import jindes.melbet.sto.databinding.FragmentDefaultBinding
-import jindes.melbet.sto.domain.entities.Exercise
-import jindes.melbet.sto.presentation.adapters.ExercisesAdapter
+import jindes.melbet.sto.domain.entities.WorkoutDay
+import jindes.melbet.sto.presentation.adapters.WorkoutDaysAdapter
 
 
-class DefaultFragment : Fragment() {
+class WorkoutDaysFragment : Fragment() {
 
     private var _binding: FragmentDefaultBinding? = null
     private val binding: FragmentDefaultBinding
         get() = _binding ?: throw RuntimeException("FragmentDefaultBinding is null")
 
-    private lateinit var adapter: ExercisesAdapter
+    private lateinit var adapter: WorkoutDaysAdapter
 
     private val viewModel: MainViewModel by lazy {
         ViewModelProvider(
@@ -46,11 +46,11 @@ class DefaultFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.rvExercises.layoutManager =
+        binding.rvWorkoutDays.layoutManager =
             LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
-        adapter = ExercisesAdapter()
-        binding.rvExercises.adapter = adapter
-        adapter.submitList(viewModel.getAllExercises())
+        adapter = WorkoutDaysAdapter()
+        binding.rvWorkoutDays.adapter = adapter
+        adapter.submitList(viewModel.getAllWorkOutDays())
         setOnItemClickListener()
     }
 
@@ -60,16 +60,16 @@ class DefaultFragment : Fragment() {
         }
     }
 
-    private fun launchDetailFragment(exercise: Exercise) {
+    private fun launchDetailFragment(workoutDay: WorkoutDay) {
         requireActivity().supportFragmentManager.beginTransaction()
-            .replace(R.id.main_container, DetailFragment.newInstance(exercise))
+            .replace(R.id.main_container, ExercisesFragment.newInstance(workoutDay))
             .addToBackStack(null)
             .commit()
     }
 
     companion object {
-        fun newInstance(): DefaultFragment {
-            return DefaultFragment()
+        fun newInstance(): WorkoutDaysFragment {
+            return WorkoutDaysFragment()
         }
     }
 }
