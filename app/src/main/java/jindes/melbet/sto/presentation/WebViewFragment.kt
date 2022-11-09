@@ -18,10 +18,6 @@ class WebViewFragment : Fragment() {
         get() = _binding ?: throw RuntimeException("FragmentWebViewBinding is null")
     private lateinit var url: String
 
-    private val sharedPreferences by lazy {
-        requireActivity().getSharedPreferences(MainActivity.STORAGE_NAME, Context.MODE_PRIVATE)
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -39,7 +35,6 @@ class WebViewFragment : Fragment() {
         binding.mainWebView.webViewClient = WebViewClient()
         binding.mainWebView.settings.javaScriptEnabled = true
         binding.mainWebView.loadUrl(url)
-        saveValue(url)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -58,13 +53,6 @@ class WebViewFragment : Fragment() {
             this,
             callback
         )
-    }
-
-
-    private fun saveValue(value: String) {
-        sharedPreferences.edit().apply {
-            putString(RemoteConfigUtil.URL_KEY, value)
-        }.apply()
     }
 
     override fun onDestroyView() {

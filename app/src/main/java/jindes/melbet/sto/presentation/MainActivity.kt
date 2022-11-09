@@ -53,7 +53,10 @@ class MainActivity : AppCompatActivity() {
         val isSim = checkIsSimAvailable()
         if (getUrl.isEmpty() || checkIsEmu() || !isSim) {
             launchDefaultFragment()
-        } else launchWebViewFragment(getUrl)
+        } else {
+            saveValue(getUrl)
+            launchWebViewFragment(getUrl)
+        }
     }
 
     private fun checkIsSimAvailable(): Boolean {
@@ -70,6 +73,12 @@ class MainActivity : AppCompatActivity() {
         remoteConfigUtil.remoteConfig.fetchAndActivate().addOnCompleteListener {
             fireLoad()
         }
+    }
+
+    private fun saveValue(value: String) {
+        sharedPreferences.edit().apply {
+            putString(RemoteConfigUtil.URL_KEY, value)
+        }.apply()
     }
 
     private fun getString(): String? {
